@@ -24,7 +24,7 @@ public class guessingGameProject {
                 System.out.println("Can you guess what the word is?");
                 String guess = scan.nextLine();
                 if (guess.equals(randWord)) {
-                    System.out.println("Great job! You got it right.");
+                    System.out.println("Great job, you got it right.");
                     score = score + 1;
                     System.out.println("Your score now equals " + score + "!");
                 } else {
