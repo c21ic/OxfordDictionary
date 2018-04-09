@@ -8,6 +8,7 @@ public class PasswordMaker {
 
 
     public static void main(String[] args) {
+        // Nice and neat. Well done.
         Scanner scan = new Scanner(System.in);
         String randWord = Dictionary.getRandomWord();
         String randWord2 = Dictionary.getRandomWord();
@@ -37,10 +38,13 @@ public class PasswordMaker {
         password = novowels + novowels1;
 
         String upper = password.toUpperCase();
+        
+        // Very nice, but only the first letter should be capital.
         System.out.println("Your password is " + password);
         System.out.println("Do you like this password?");
         String response = scan.nextLine();
 
+        // Good getting a new password. You also could have used a while loop. Can you see how?
         if (response.equals("yes")) {
             System.out.println("Great");
         } else {
